@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-nerds.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -16,7 +19,9 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <a class="cart" href="cart-item.html" aria-label="Корзина для товаров">Корзина</a>
+        <div class="cart">
+          <a class="cart-item" href="cart-item.html" aria-label="Корзина для товаров">Корзина</a>
+        </div>
       </nav>
     </header>
     <main>
@@ -48,7 +53,7 @@
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
+            <ul class>
               <li class="filter-option">
                 <label>
                   <input class="visually-hidden" type="checkbox" name="slider" checked>
@@ -69,7 +74,7 @@
               </li>
               <li class="filter-option">
                 <label>
-                  <input class="visually-hidden" type="checkbox" name="gallery">
+                  <input class="visually-hidden" type="checkbox" name="gallery" disabled>
                   Галерея
                  </label>
               </li>
@@ -88,7 +93,7 @@
       </section>
       <section class="templates">
       <h2 class="visually-hidden">Шаблоны</h2>
-        <ul>
+        <ul class="templates-list">
           <li>
             <img src="img/cp_sedona.jpg" width="360" height="576" alt="Седона"> <!--cp-content picture=контентная картинка-->
             <a href="catalog-item.html">
@@ -148,7 +153,7 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <div>
+      <div class="bonus">
         <p><b>Давайте дружить это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>

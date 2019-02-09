@@ -17,12 +17,14 @@ a {
 
 .button {
   font: inherit;
-  color: black; /*потом исправлю*/
+
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
 
-  background-color: #ffffff;
   border: none;
+  background-color: #ffffff;
 }
 
 .main-navigation {
@@ -66,6 +68,93 @@ a {
   text-align: center;
 }
 
-.footer-social {
+.button-web-site {
+  background-color: #fb565a;
+}
+
+.button-web-site:hover {
+  background-color: #e74246;
+}
+
+.button-web-site:focus{
+  background-color: #d7373b;
+}
+
+.button-apps {
+  background-color: #00ca74;
+}
+
+.button-apps:hover {
+  background-color: #00bc6c;
+}
+
+.button-apps:focus {
+  background-color: #00aa62;
+}
+
+.button-presentation {
+  background-color: #efc84a;
+}
+
+.button-presentation:hover {
+  background-color: #eab534;
+}
+
+.button-presentation:focus {
+  background-color: #e5a722;
+}
+
+
+.footer-social ul {
   list-style: none;
+
+  text-align: center;
+}
+
+.footer-social a{
+  color: #000000;
+}
+
+.bonus p {
+  text-align: center;
+}
+
+.bonus p:first-of-type {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.bonus p:last-of-type{
+  line-height: 22px;
+}
+
+/* страница католога*/
+.catalog-page h1 {
+  text-align: center;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.templates-list {
+  list-style: none;
+}
+
+.templates-list a {
+  color: #000000;
 }
