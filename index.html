@@ -60,9 +60,21 @@
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="www.vk">Вконтакте</a></li>
-          <li><a class="social-button" href="www.fb">Фейсбук</a></li>
-          <li><a class="social-button" href="www.insta">Инстаграм</a></li>
+          <li><a class="social-button" href="www.vk">
+            <div class="backdrop-button">
+              <img src="img/icon_social_vk.svg" width="26px" height="15px"></a>
+            </div>
+          </li>
+          <li><a class="social-button">
+            <div class="backdrop-button">
+              <img src="img/icon_social_fb.svg" width="12px" height="22px"></a>
+            </div>
+          </li>
+          <li><a class="social-button" href="www.insta">
+            <div class="backdrop-button">
+              <img src="img/icon_social_insta.svg" width="21" height="21"><a>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="bonus">
@@ -70,5 +82,26 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <!--Разметка попапа-->
+    <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" method="get" action="http://echo.htmlacademy.ru">
+        <p>
+          <label>
+            Ваше имя:
+            <input type="text" value="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input type="text" value="email@example.com">
+          </label>
+        </p>
+        <p>Текст письма:</p>
+        <textarea rows="10" cols="50">В свободной форме</textarea>
+        <button type="submit">
+          Отправить
+        </button>
+      </form>
+      <button class="feedback-close" type="button">x</button>
   </body>
 </html>

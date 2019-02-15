@@ -170,15 +170,6 @@ a {
   line-height: 20px;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: red;
-}
-
-.filter-input:disabled + label {
-  color: red/*rgba(0, 0, 0, 0.3)*/;
-}
-
 .templates-list {
   list-style: none;
 }
@@ -224,4 +215,19 @@ a {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 -3px 0 0 #bfbfbf;
+}
+
+/*описания фона кнопок соц сетей*/
+.backdrop-button {
+  height: 80px;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*описание наложенной формы при выделении проекта*/
+.sedona-write {
+  heght: 230px;
+  width: 360px;
+  background-color: red;
 }
