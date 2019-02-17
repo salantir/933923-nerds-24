@@ -218,16 +218,39 @@ a {
 }
 
 /*описания фона кнопок соц сетей*/
-.backdrop-button {
+.social-button {
+  display: block;
   height: 80px;
   width: 80px;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.vk {
+  background-image: url("../img/icon_social_vk.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 15px;
+  background-position: center;
+}
+
+.fb {
+  background-image: url("../img/icon_social_fb.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 22px;
+  background-position: center;
+}
+
+.insta {
+  background-image: url("../img/icon_social_insta.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  background-position: center;
 }
 
 
 /*описание наложенной формы при выделении проекта*/
-.sedona-write {
-  heght: 230px;
+.write {
+  height: 230px;
   width: 360px;
   background-color: red;
 }
