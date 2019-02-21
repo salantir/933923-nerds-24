@@ -11,12 +11,32 @@ body {
   background-color: #ffffff;
 }
 
+body > * {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+body > * > * {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+body > * > * > * {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+body > * > * > * > * {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
 a {
   text-decoration: none;
 }
 
 .button {
+  display: block;
+  width: 160px;
+  height: 50px;
   font: inherit;
+  border-radius: 2px;
 
   color: #ffffff;
   text-align: center;
@@ -217,6 +237,25 @@ a {
   box-shadow: 0 -3px 0 0 #bfbfbf;
 }
 
+.decoration-picture-web-site {
+  background-image: url("../img/card_service_websites.jpg");
+  background-size: 300px 146px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.decoration-picture-apps {
+  background-image: url("../img/card_service_application.jpg");
+  background-size: 300px 146px;
+  background-repeat: no-repeat;
+}
+
+.decoration-picture-presentation {
+  background-image: url("../img/card_service_presentation.jpg");
+  background-size: 300px 146px;
+  background-repeat: no-repeat;
+}
+
 /*описания фона кнопок соц сетей*/
 .social-button {
   display: block;
@@ -247,10 +286,62 @@ a {
   background-position: center;
 }
 
+/*.cart-item {
+  background-image: url("../img/icon_cart.svg");
+  background-repeat: no-repeat;
+}*/
+
 
 /*описание наложенной формы при выделении проекта*/
 .write {
   height: 230px;
   width: 360px;
   background-color: red;
+}
+
+/*Сетка*/
+
+.main-header {
+  margin-bottom: 18px;
+  /* временно для сетки*/
+  min-height: 98px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* временно для сетки*/
+  min-height: 98px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* временно для сетки*/
+  display: block;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 800px;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 180px;
+  padding-right: 160px;
+
+  list-style: none;
+}
+
+.cart {
+  width: 160px;
+  min-height: 98px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 81px;
 }
