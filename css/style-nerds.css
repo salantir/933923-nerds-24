@@ -32,12 +32,13 @@ a {
 }
 
 .button {
-  display: block;
   width: 160px;
   height: 50px;
   font: inherit;
   border-radius: 2px;
-
+  display:flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -237,22 +238,28 @@ a {
   box-shadow: 0 -3px 0 0 #bfbfbf;
 }
 
-.decoration-picture-web-site {
+.services-website {
+  height: 146px;
+  width: 300px;
   background-image: url("../img/card_service_websites.jpg");
-  background-size: 300px 146px;
-  background-position: center;
-  background-repeat: no-repeat;
+ /* background-size: 300px 146px;*/
+  background-repeat: ;
 }
 
-.decoration-picture-apps {
+.services-apps {
+  height: 146px;
+  width: 300px;
   background-image: url("../img/card_service_application.jpg");
-  background-size: 300px 146px;
+  /*background-size: 300px 146px;*/
   background-repeat: no-repeat;
 }
 
-.decoration-picture-presentation {
+.services-presentation {
+  height: 146px;
+  width: 300px;
   background-image: url("../img/card_service_presentation.jpg");
-  background-size: 300px 146px;
+  margin-right: 60px;
+ /* background-size: 300px 146px;*/
   background-repeat: no-repeat;
 }
 
@@ -263,6 +270,16 @@ a {
   width: 80px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .vk {
@@ -286,6 +303,11 @@ a {
   background-position: center;
 }
 
+.modal-feedback {
+  width: 960px;
+  height: 595px;
+}
+
 /*.cart-item {
   background-image: url("../img/icon_cart.svg");
   background-repeat: no-repeat;
@@ -301,10 +323,23 @@ a {
 
 /*Сетка*/
 
+.services{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .main-header {
   margin-bottom: 18px;
+
   /* временно для сетки*/
-  min-height: 98px;
+  min-height: 545px;
+  margin-bottom: 80px;
 }
 
 .main-navigation {
@@ -321,15 +356,13 @@ a {
   height: 65px;
   margin-left: 20px;
   margin-right: 20px;
-  /* временно для сетки*/
-  display: block;
 }
 
 .site-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 800px;
+  flex-grow: 1;
   padding: 0px;
   margin: 0px;
   padding-left: 180px;
@@ -344,4 +377,31 @@ a {
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 81px;
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 150px;
+  text-align: left;
+}
+
+.development-services{
+  margin-bottom: 122px;
+}
+
+.main-site {
+  min-height: 1220px; /*временно*/
+}
+
+.goods {
+  display: flex;
+}
+
+.templates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
 }
