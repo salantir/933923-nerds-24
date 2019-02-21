@@ -8,7 +8,7 @@
     <link href="css/style-nerds.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/icon_logo_nerds.svg" width="160" height="65" alt="Логотип студии Нёрдс">
@@ -24,140 +24,142 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>Магазин готовых шаблонов</h1>
-      <section class="filters">
-        <form class="filter" method="get" action="http://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="radio" name="grid" value="Адаптивная" checked>
-                  Адаптивная
-                </label>
-              </li>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="radio" name="grid" value="Фиксированная">
-                  Фиксированная
-                </label>
-              </li>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="radio" name="grid" value="Резиновая" disabled>
-                  Резиновая
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
-            <ul class>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="checkbox" name="slider" checked>
-                  Слайдер
-                </label>
-              </li>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="checkbox" name="block-advantages">
-                  Блок преимуществ
-                </label>
-              </li>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="checkbox" name="news" checked>
-                  Новости
-                </label>
-              </li>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="checkbox" name="gallery" disabled>
-                  Галерея
-                 </label>
-              </li>
-              <li class="filter-option">
-                <label>
-                  <input class="visually-hidden filter-input" type="checkbox" name="cart-checkbox">
-                  Корзина
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit" class="submit">
-            Показать
-          </button>
-        </form>
-      </section>
-      <section class="templates">
-      <h2 class="visually-hidden">Шаблоны</h2>
-        <ul class="templates-list">
-          <li>
-            <a href="catalog-item.html"><img src="img/cp_sedona.jpg" width="360" height="576" alt="Седона"></a> <!--cp-content picture=контентная картинка-->
-            <div class="write sedona-write">
-              <a href="catalog-item.html">
-                <h3>Седона</h3>
-              </a>
-              <p>Какое-то описание</p>
-              <a href="1">5000</a>
-            </div>
-          </li>
-          <li>
-            <a href="catalog-item.html"><img src="img/cp_pink.jpg" width="360" height="576" alt="Пинк"></a>
-            <div class="write pink-write">
-              <a href="catalog-item.html">
-                <h3>Пинк</h3>
-              </a>
-              <p>Какое-то описание</p>
-              <a href="2">5000</a>
-            </div>
-          </li>
-          <li>
-            <a href="catalog-item.html"><img src="img/cp_barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
-            <div class="write barbershop-write">
-              <a href="catalog-item.html">
-                <h3>Барбершоп Бородинский</h3>
-              </a>
-              <p>Какое-то описание</p>
-              <a href="3">5000</a>
-            </div>
-          </li>
-          <li>
-            <a><img src="img/cp_mishka.jpg" width="360" height="576" alt="Мишка"></a>
-            <div class="write mishka-write">
-              <a href="catalog-item.html">
-                <h3>Мишка</h3>
-              </a>
-              <p>Какое-то описание</p>
-              <a href="4">5000</a>
-            </div>
-          </li>
-          <li>
-            <a href="catalog-item.html"><img src="img/cp_aplus.jpg" width="360" height="576" alt="А+"></a>
-            <div class="write A+-write">
-              <a href="catalog-item.html">
-                <h3>А+</h3>
-              </a>
-              <p>Какое-то описание</p>
-              <a href="5">5000</a>
-            </div>
-          </li>
-          <li>
-            <a href="catalog-item.html"><img src="img/cp_kvast.jpg" width="360" height="576" alt="Кваст"></a>
-            <div class="write kvast-write">
-              <a href="catalog-item.html">
-                <h3>Кваст</h3>
-              </a>
-              <p>Какое-то описание</p>
-              <a href="6">5000</a>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <div class="goods">
+        <section class="filters">
+          <form class="filter" method="get" action="http://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="radio" name="grid" value="Адаптивная" checked>
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="radio" name="grid" value="Фиксированная">
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="radio" name="grid" value="Резиновая" disabled>
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul class>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="slider" checked>
+                    Слайдер
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="block-advantages">
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="news" checked>
+                    Новости
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="gallery" disabled>
+                    Галерея
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="cart-checkbox">
+                    Корзина
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="submit">
+              Показать
+            </button>
+          </form>
+        </section>
+        <section class="templates">
+        <h2 class="visually-hidden">Шаблоны</h2>
+          <ul class="templates-list">
+            <li>
+              <a href="catalog-item.html"><img src="img/cp_sedona.jpg" width="360" height="576" alt="Седона"></a> <!--cp-content picture=контентная картинка-->
+              <div class="write sedona-write">
+                <a href="catalog-item.html">
+                  <h3>Седона</h3>
+                </a>
+                <p>Какое-то описание</p>
+                <a href="1">5000</a>
+              </div>
+            </li>
+            <li>
+              <a href="catalog-item.html"><img src="img/cp_pink.jpg" width="360" height="576" alt="Пинк"></a>
+              <div class="write pink-write">
+                <a href="catalog-item.html">
+                  <h3>Пинк</h3>
+                </a>
+                <p>Какое-то описание</p>
+                <a href="2">5000</a>
+              </div>
+            </li>
+            <li>
+              <a href="catalog-item.html"><img src="img/cp_barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
+              <div class="write barbershop-write">
+                <a href="catalog-item.html">
+                  <h3>Барбершоп Бородинский</h3>
+                </a>
+                <p>Какое-то описание</p>
+                <a href="3">5000</a>
+              </div>
+            </li>
+            <li>
+              <a><img src="img/cp_mishka.jpg" width="360" height="576" alt="Мишка"></a>
+              <div class="write mishka-write">
+                <a href="catalog-item.html">
+                  <h3>Мишка</h3>
+                </a>
+                <p>Какое-то описание</p>
+                <a href="4">5000</a>
+              </div>
+            </li>
+            <li>
+              <a href="catalog-item.html"><img src="img/cp_aplus.jpg" width="360" height="576" alt="А+"></a>
+              <div class="write A+-write">
+                <a href="catalog-item.html">
+                  <h3>А+</h3>
+                </a>
+                <p>Какое-то описание</p>
+                <a href="5">5000</a>
+              </div>
+            </li>
+            <li>
+              <a href="catalog-item.html"><img src="img/cp_kvast.jpg" width="360" height="576" alt="Кваст"></a>
+              <div class="write kvast-write">
+                <a href="catalog-item.html">
+                  <h3>Кваст</h3>
+                </a>
+                <p>Какое-то описание</p>
+                <a href="6">5000</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="footer-social">
         <ul class="social">
           <li>
