@@ -308,6 +308,19 @@ a {
   height: 595px;
 }
 
+.feedback-close {
+  height: 21px;
+  width: 21px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  align-items: flex-start;
+}
+
+
 /*.cart-item {
   background-image: url("../img/icon_cart.svg");
   background-repeat: no-repeat;
@@ -402,6 +415,15 @@ a {
 .templates {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: auto;
+}
+
+.templates-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-footer-catalog {
+  margin-bottom: 20px;
 }
