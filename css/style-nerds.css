@@ -238,29 +238,71 @@ a {
   box-shadow: 0 -3px 0 0 #bfbfbf;
 }
 
-.services-website {
-  height: 146px;
-  width: 300px;
+.services-item p,
+.services-item h3 {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.services-item {
+  width: 33.33333%;
+  box-sizing: border-box;
+  padding-right: 80px;
+  position: relative;
+  padding-top: 175px;
+}
+  /*.services-website {
+  padding-top: 175px;
+  position: relative;
   background-image: url("../img/card_service_websites.jpg");
- /* background-size: 300px 146px;*/
-  background-repeat: ;
-}
-
-.services-apps {
-  height: 146px;
-  width: 300px;
-  background-image: url("../img/card_service_application.jpg");
-  /*background-size: 300px 146px;*/
   background-repeat: no-repeat;
+}*/
+
+.services-website::before {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  background-image: url("../img/card_service_websites.jpg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 146px;
+  top: 0;
+  left: 0;
 }
 
-.services-presentation {
-  height: 146px;
+/*.services-apps {
+  background-image: url("../img/card_service_application.jpg");
+  background-repeat: no-repeat;
+}*/
+
+.services-apps::before {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  background-image: url("../img/card_service_application.jpg");
+  background-repeat: no-repeat;
   width: 300px;
+  height: 146px;
+  top: 0;
+  left: 0;
+}
+
+/*.services-presentation {
   background-image: url("../img/card_service_presentation.jpg");
   margin-right: 60px;
- /* background-size: 300px 146px;*/
   background-repeat: no-repeat;
+}*/
+
+.services-presentation::before {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  background-image: url("../img/card_service_presentation.jpg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 146px;
+  top: 0;
+  left: 0;
 }
 
 /*описания фона кнопок соц сетей*/
@@ -340,6 +382,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-right: 0px;
 }
 
 .container {
@@ -413,15 +456,15 @@ a {
 }
 
 .templates {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  display: block;
+  margin-left: auto;
 }
 
 .templates-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 760px;
 }
 
 .main-footer-catalog {
