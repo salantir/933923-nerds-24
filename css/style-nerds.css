@@ -314,6 +314,12 @@ a {
 
 .social {
   display: flex;
+  justify-content: flex-start;
+}
+
+.social li:nth-child(2),
+.social li:nth-child(3) {
+  padding-left: 15px;
 }
 
 .vk {
@@ -413,23 +419,23 @@ a {
 }
 
 .main-header-logo {
-  width: 160px;
-  height: 65px;
-  margin-left: 20px;
   margin-right: 20px;
 }
 
 .site-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-grow: 1;
   padding: 0px;
   margin: 0px;
   padding-left: 180px;
   padding-right: 160px;
-
   list-style: none;
+}
+
+.site-navigation li {
+  margin-left: 49px;
 }
 
 .cart {
@@ -468,7 +474,6 @@ a {
 }
 
 .templates {
-  /*display: block;*/
   margin-left: auto;
   width: 760px;
 }
@@ -476,12 +481,106 @@ a {
 .templates-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /*width: 760px;*/
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .main-footer-catalog {
   margin-bottom: 20px;
+}
+
+.cutaway-logo {
+  display: block;
+  text-align: right;
+  box-sizing: border-box;
+  margin-bottom: 38px;
+}
+
+.friends {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.about-nerds {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 125px;
+
+}
+
+.opportunity {
+  width: 680px;
+}
+
+.about-studio {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+  padding-bottom: 30px;
+}
+
+.slogan {
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.orders {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.orders li {
+  padding-top: 30px;
+  padding-left: 35px;
+  text-transform: none;
+}
+
+.cutaway {
+  position: relative;
+  width: 460px;
+}
+
+.accuracy {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 20px;
+}
+
+.accuracy li {
+  text-transform: none;
+  font-size: 45px;
+  line-height: 10px;
+  padding-bottom: 25px;
+}
+
+.accuracy li p {
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 25px;
+}
+
+.browser {
+  background-image: url("../img/icon_browser_.png");
+  background-repeat: no-repeat;
+  background-size: 360px 40px;
+  display: inline-block;
+  top: 0;
+  left: 0
 }
 
 /* начало слайдера*/
@@ -632,110 +731,105 @@ a {
 }
 /* конец слайдера*/
 
-.about-nerds {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 125px;
-
-}
-
-.opportunity {
-  width: 680px;
-}
-
-.about-studio {
-  padding: 0;
+/*начало фильтра*/
+.filter-item {
   margin: 0;
-  font-size: 45px;
-  line-height: 45px;
-  padding-bottom: 30px;
+  padding: 0;
+
+  border: none;
 }
 
-.slogan {
-  padding: 0;
-  margin: 0;
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
   padding-right: 20px;
-  padding-bottom: 40px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
 }
 
-.orders {
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
   padding: 0;
-  margin: 0;
-  list-style: none;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
   text-transform: uppercase;
 }
 
-.orders li {
-  padding-top: 30px;
-  padding-left: 35px;
-  text-transform: none;
-}
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
 
-.cutaway {
-  width: 460px;
-}
-
-.accuracy {
-  display: flex;
-  align-items:flex-end;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  padding-top: 240px;
-}
-
-.accuracy li {
-  text-transform: none;
-  font-size: 45px;
-  line-height: 10px;
-  padding-bottom: 25px;
-}
-
-.accuracy li p {
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  line-height: 18px;
-  padding-top: 25px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
 }
 
-/*.cutaway-picture {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /*background-image: url("../card_nerds_illustration.jpg");
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 208px;*/
+.max-price {
+  text-align: right;
 }
-
-/*.cutaway-picture::before {
-  content: '';
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 208px;
-  top: 0;
-  left: 0;
-}
-/*.services-item {
-  margin: 0;
-  padding: 0;
-  width: 33.33333%;
-  box-sizing: border-box;
-  padding-right: 80px;
-  position: relative;
-  padding-top: 175px;
-}
-
-.services-item::before {
-  content: '';
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
-  top: 0;
-  left: 0;
-}*/
+/*Конец фильтра*/

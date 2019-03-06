@@ -29,6 +29,22 @@
       <div class="goods">
         <section class="filters">
           <form class="filter" method="get" action="http://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
@@ -94,65 +110,77 @@
         </section>
         <section class="templates">
         <h2 class="visually-hidden">Шаблоны</h2>
+          <span>Сортировать:</span>
+          <ul>
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по названию</li>
+          </ul>
           <ul class="templates-list">
             <li>
+              <div class="browser"></div>
               <a href="catalog-item.html"><img src="img/cp_sedona.jpg" width="360" height="576" alt="Седона"></a> <!--cp-content picture=контентная картинка-->
               <div class="write sedona-write">
                 <a href="catalog-item.html">
-                  <h3>Седона</h3>
+                  <h3>Sedona</h3>
                 </a>
-                <p>Какое-то описание</p>
-                <a href="1">5000</a>
+                <p>Информационный сайт для туристов</p>
+                <a class="button" href="1">5000</a>
               </div>
             </li>
             <li>
+              <div class="browser"></div>
               <a href="catalog-item.html"><img src="img/cp_pink.jpg" width="360" height="576" alt="Пинк"></a>
               <div class="write pink-write">
                 <a href="catalog-item.html">
-                  <h3>Пинк</h3>
+                  <h3>Pink App</h3>
                 </a>
-                <p>Какое-то описание</p>
-                <a href="2">5000</a>
+                <p>Продуктовый леднинг приложения для iOS и Android</p>
+                <a class="button" href="2">5000</a>
               </div>
             </li>
             <li>
+              <div class="browser"></div>
               <a href="catalog-item.html"><img src="img/cp_barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
               <div class="write barbershop-write">
                 <a href="catalog-item.html">
-                  <h3>Барбершоп Бородинский</h3>
+                  <h3>Barbershop</h3>
                 </a>
-                <p>Какое-то описание</p>
-                <a href="3">5000</a>
+                <p>Сайт салона красоты. Для мужчин, да</p>
+                <a class="button" href="3">5000</a>
               </div>
             </li>
             <li>
+              <div class="browser"></div>
               <a><img src="img/cp_mishka.jpg" width="360" height="576" alt="Мишка"></a>
               <div class="write mishka-write">
                 <a href="catalog-item.html">
-                  <h3>Мишка</h3>
+                  <h3>Mishka</h3>
                 </a>
-                <p>Какое-то описание</p>
-                <a href="4">5000</a>
+                <p>Интернет магазин вязаных игрушек</p>
+                <a class="button" href="4">5000</a>
               </div>
             </li>
             <li>
+              <div class="browser"></div>
               <a href="catalog-item.html"><img src="img/cp_aplus.jpg" width="360" height="576" alt="А+"></a>
               <div class="write A+-write">
                 <a href="catalog-item.html">
-                  <h3>А+</h3>
+                  <h3>А Plus</h3>
                 </a>
-                <p>Какое-то описание</p>
-                <a href="5">5000</a>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="button" href="5">5000</a>
               </div>
             </li>
             <li>
+              <div class="browser"></div>
               <a href="catalog-item.html"><img src="img/cp_kvast.jpg" width="360" height="576" alt="Кваст"></a>
               <div class="write kvast-write">
                 <a href="catalog-item.html">
                   <h3>Кваст</h3>
                 </a>
-                <p>Какое-то описание</p>
-                <a href="6">5000</a>
+                <p>Промо-сайт производства крафтового кваса</p>
+                <a class="button" href="6">5000</a>
               </div>
             </li>
           </ul>
