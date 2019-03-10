@@ -11,7 +11,7 @@ body {
   background-color: #ffffff;
 }
 
-body > * {
+/*body > * {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -25,13 +25,13 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(0, 255, 255, 0.5);
-}
+}*/
 
 a {
   text-decoration: none;
 }
 
-.visually-hidden/*:not(:focus):not(:active)*/ {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -81,6 +81,7 @@ a {
 
 .site-navigation {
   list-style: none;
+  font-weight: bold;
 }
 
 .site-navigation a,
@@ -400,9 +401,15 @@ a {
 .popap-write:hover .write {
   display:block;
   position:absolute;
-  z-index:9999;
+  z-index:1;
   top: 346px;
 }
+
+.browser {
+  opacity: 0.12;
+}
+
+.browser:hover .write
 
 .write h3 {
   padding-top: 30px;
@@ -450,6 +457,19 @@ a {
   padding: 0;
   margin-top: 60px;
   width: 380px;
+}
+
+.pagination-list a {
+  color: #000000;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+
+}
+
+.pagination-item:active {
+
 }
 
 /*Сетка*/
@@ -567,6 +587,19 @@ a {
   display: block;
 }
 
+.logo-friends {
+  opacity: 0.2;
+}
+
+.logo-friends:hover,
+.logo-friends:focus {
+  opacity: 1;
+}
+
+.logo-friends:active {
+  opacity: 0.1;
+}
+
 
 .about-nerds {
   display: flex;
@@ -624,10 +657,19 @@ a {
   padding-top: 20px;
 }
 
+.accuracy span {
+  font-weight: bold;
+}
+
 .accuracy li {
   text-transform: none;
   font-size: 45px;
   line-height: 10px;
+  /*font-weight: bold;*/
+}
+
+.accuracy sup {
+  font-weight: normal;
 }
 
 .accuracy li p {
@@ -637,12 +679,22 @@ a {
 }
 
 .browser {
-  background-image: url("../img/icon_browser_.png");
+  padding: 0;
+  margin: 0;
+  /*background-image: url("../img/icon_browser_.png");
   background-repeat: no-repeat;
   background-size: 360px 40px;
   display: inline-block;
   top: 0;
-  left: 0
+  left: 0*/
+}
+
+.sorting {
+  display: flex;
+}
+
+.sorting-item {
+  display: flex;
 }
 
 /* начало слайдера*/

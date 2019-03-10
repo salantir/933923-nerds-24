@@ -8,21 +8,23 @@
     <link href="css/style-nerds.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
-    <header class="main-header container">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/icon_logo_nerds.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="atelier.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="cart">
-          <a class="cart-item" href="cart-item.html" aria-label="Корзина для товаров">Корзина</a>
-        </div>
-      </nav>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/icon_logo_nerds.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="atelier.html">Студия</a></li>
+            <li><a href="clients.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="cart">
+            <a class="cart-item" href="cart-item.html" aria-label="Корзина для товаров">Корзина</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
@@ -110,15 +112,17 @@
         </section>
         <section class="templates">
         <h2 class="visually-hidden">Шаблоны</h2>
-          <span>Сортировать:</span>
-          <ul>
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по названию</li>
-          </ul>
+          <div class="sorting-item">
+            <span>Сортировать:</span>
+            <ul class="sorting">
+              <li>по цене</li>
+              <li>по типу</li>
+              <li>по названию</li>
+            </ul>
+          </div>
           <ul class="templates-list">
             <li>
-              <div class="browser"></div>
+              <div class="browser"><img src="img/icon_browser_dark.png" width="360" height="40"></div>
               <div class="popap-write">
                 <a href="catalog-item.html"><img src="img/cp_sedona.jpg" width="360" height="576" alt="Седона"></a> <!--cp-content picture=контентная картинка-->
                 <div class="write sedona-write">
@@ -131,7 +135,7 @@
               </div>
             </li>
             <li>
-              <div class="browser"></div>
+              <div class="browser"><img src="img/icon_browser_dark.png"></div>
               <div class="popap-write">
                 <a href="catalog-item.html"><img src="img/cp_pink.jpg" width="360" height="576" alt="Пинк"></a>
                 <div class="write pink-write">
@@ -144,7 +148,7 @@
               </div>
             </li>
             <li>
-              <div class="browser"></div>
+              <div class="browser"><img src="img/icon_browser_dark.png"></div>
               <div class="popap-write">
                 <a href="catalog-item.html"><img src="img/cp_barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
                 <div class="write barbershop-write">
@@ -157,7 +161,7 @@
               </div>
             </li>
             <li>
-              <div class="browser"></div>
+              <div class="browser"><img src="img/icon_browser_dark.png"></div>
               <div class="popap-write">
                 <a><img src="img/cp_mishka.jpg" width="360" height="576" alt="Мишка"></a>
                 <div class="write mishka-write">
@@ -170,7 +174,7 @@
               </div>
             </li>
             <li>
-              <div class="browser"></div>
+              <div class="browser"><img src="img/icon_browser_dark.png"></div>
               <div class="popap-write">
                 <a href="catalog-item.html"><img src="img/cp_aplus.jpg" width="360" height="576" alt="А+"></a>
                 <div class="write A-write">
@@ -183,7 +187,7 @@
               </div>
             </li>
             <li>
-              <div class="browser"></div>
+              <div class="browser"><img src="img/icon_browser_dark.png"></div>
               <div class="popap-write">
                 <a href="catalog-item.html"><img src="img/cp_kvast.jpg" width="360" height="576" alt="Кваст"></a>
                 <div class="write kvast-write">
