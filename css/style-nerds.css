@@ -683,7 +683,7 @@ a {
   position: relative;
 }
 
-.popap-description::before {
+.popap-description > a::before {
   content: " ";
   position: absolute;
   background-image: url("../img/icon_browser.svg");
@@ -695,8 +695,8 @@ a {
   opacity: 0.12;
 }
 
-.popap-description::before:hover .description {
-  background-image: url("../img/icon_browser.svg");
+.popap-description > a:hover::before {
+  opacity: 1;
 }
 
 .popap-description:hover .description {
