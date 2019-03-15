@@ -36,7 +36,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    <div class="bar" style="margin-left: 0; width: 60%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -52,19 +52,19 @@
               <ul>
                 <li class="filter-option">
                   <label>
-                    <input class="visually-hidden filter-input" type="radio" name="grid" value="Адаптивная" checked>
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="Адаптивная" checked>
                     Адаптивная
                   </label>
                 </li>
                 <li class="filter-option">
                   <label>
-                    <input class="visually-hidden filter-input" type="radio" name="grid" value="Фиксированная">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="Фиксированная">
                     Фиксированная
                   </label>
                 </li>
                 <li class="filter-option">
                   <label>
-                    <input class="visually-hidden filter-input" type="radio" name="grid" value="Резиновая" disabled>
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="Резиновая" disabled>
                     Резиновая
                   </label>
                 </li>
@@ -115,17 +115,22 @@
           <div class="sorting-item">
             <span>Сортировать:</span>
             <ul class="sorting">
-              <li>по цене</li>
-              <li>по типу</li>
-              <li>по названию</li>
+              <li>
+                <a href="#">по цене</a>
+              </li>
+              <li>
+                <a href="#">по типу</a>
+              </li>
+              <li>
+                <a href="#">по названию</a>
+              </li>
             </ul>
           </div>
           <ul class="templates-list">
             <li>
-              <div class="browser"><img src="img/icon_browser_dark.png" width="360" height="40"></div>
-              <div class="popap-write">
+              <div class="popap-description">
                 <a href="catalog-item.html"><img src="img/cp_sedona.jpg" width="360" height="576" alt="Седона"></a> <!--cp-content picture=контентная картинка-->
-                <div class="write sedona-write">
+                <div class="description sedona-description">
                   <a href="catalog-item.html">
                     <h3>Sedona</h3>
                   </a>
@@ -135,10 +140,9 @@
               </div>
             </li>
             <li>
-              <div class="browser"><img src="img/icon_browser_dark.png"></div>
-              <div class="popap-write">
+              <div class="popap-description">
                 <a href="catalog-item.html"><img src="img/cp_pink.jpg" width="360" height="576" alt="Пинк"></a>
-                <div class="write pink-write">
+                <div class="description pink-description">
                   <a href="catalog-item.html">
                     <h3>Pink App</h3>
                   </a>
@@ -148,10 +152,9 @@
               </div>
             </li>
             <li>
-              <div class="browser"><img src="img/icon_browser_dark.png"></div>
-              <div class="popap-write">
+              <div class="popap-description">
                 <a href="catalog-item.html"><img src="img/cp_barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
-                <div class="write barbershop-write">
+                <div class="description barbershop-description">
                   <a href="catalog-item.html">
                     <h3>Barbershop</h3>
                   </a>
@@ -161,10 +164,9 @@
               </div>
             </li>
             <li>
-              <div class="browser"><img src="img/icon_browser_dark.png"></div>
-              <div class="popap-write">
+              <div class="popap-description">
                 <a><img src="img/cp_mishka.jpg" width="360" height="576" alt="Мишка"></a>
-                <div class="write mishka-write">
+                <div class="description mishka-description">
                   <a href="catalog-item.html">
                     <h3>Mishka</h3>
                   </a>
@@ -174,10 +176,9 @@
               </div>
             </li>
             <li>
-              <div class="browser"><img src="img/icon_browser_dark.png"></div>
-              <div class="popap-write">
+              <div class="popap-description">
                 <a href="catalog-item.html"><img src="img/cp_aplus.jpg" width="360" height="576" alt="А+"></a>
-                <div class="write A-write">
+                <div class="description A-description">
                   <a href="catalog-item.html">
                     <h3>А Plus</h3>
                   </a>
@@ -187,10 +188,9 @@
               </div>
             </li>
             <li>
-              <div class="browser"><img src="img/icon_browser_dark.png"></div>
-              <div class="popap-write">
+              <div class="popap-description">
                 <a href="catalog-item.html"><img src="img/cp_kvast.jpg" width="360" height="576" alt="Кваст"></a>
-                <div class="write kvast-write">
+                <div class="description kvast-description">
                   <a href="catalog-item.html">
                     <h3>Кваст</h3>
                   </a>
@@ -204,7 +204,7 @@
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#next">Следующая</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#next">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -213,18 +213,18 @@
       <div class="footer-social">
         <ul class="social">
           <li>
-            <span class="visually-hidden">Мы Вконтакте</span>
             <a class="social-button vk" href="www.vk">
+              <span class="visually-hidden">Мы Вконтакте</span>
             </a>
           </li>
           <li>
-            <span class="visually-hidden">Мы В Фейсбуке</span>
             <a class="social-button fb" href="www.fb">
+              <span class="visually-hidden">Мы В Фейсбуке</span>
             </a>
           </li>
           <li>
-            <span class="visually-hidden">Мы Инстаграмме</span>
             <a class="social-button insta" href="www.insta">
+              <span class="visually-hidden">Мы Инстаграмме</span>
             </a>
           </li>
         </ul>
