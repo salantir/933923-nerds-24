@@ -536,14 +536,57 @@ a {
   background-image: url("../img/icon_social_insta_dark.svg");
 }
 
+/*Разметка попапа*/
+.modal {
+  position: fixed;
+  color: #000000;
+}
+
 .modal-feedback {
-  width: 960px;
-  height: 595px;
+  width: 760px;
+  padding: 50px 100px;
+  bottom: 180px;
+  left: 50%;
+  outline: 5px solid red;
+  margin-left: -380px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 .feedback-close {
+  position: absolute;
+  top: 53px;
+  right: 91px;
   height: 21px;
   width: 21px;
+  font-size: 0;
+  border: 0;
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0.3;
+  background-color: #ffffff;
+}
+
+.feedback-close:hover,
+.feedback-close:focus {
+  opacity: 1;
+}
+
+.feedback-close:active {
+  opacity: 0.1;
+}
+
+.modal h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  font-size: 45px;
+  line-height: 45px;
+}
+.modal-feedback p {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .feedback-form {
@@ -552,7 +595,7 @@ a {
   margin: 0px;
   align-items: flex-start;
 }
-
+/*конец попапа*/
 /*Конец описания futer главной страницы*/
 
 
@@ -581,6 +624,9 @@ a {
 
 .filter fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .filter {
@@ -592,11 +638,43 @@ a {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .filter ul {
   list-style: none;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+/*временно*/
+.filter-option {
+  margin-bottom: 25px;
+  padding-left: 36px;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.filter-option label {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-radio li {
+  position: relative;
+}
+
+.filter-radio label::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/radio-off.svg");
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  left: 1px;
+  top: -2px;
+  opacity: 0.4;
 }
 
 .price-controls label {
@@ -606,7 +684,7 @@ a {
 .filter-input-radio::before {
   content: " ";
   position: absolute;
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -679,8 +757,55 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 240px;
+  margin-left: 100px;
   width: 360px;
+  padding-right: 80px;
+}
+
+.sorting-up-down {
+  display: flex;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.down {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  right: 18px;
+  opacity: 0.2
+}
+
+.up {
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  opacity: 0.2
+}
+
+.down:hover,
+.up:hover,
+.down:focus,
+.up:focus  {
+  opacity: 0.6;
+}
+
+.up:hover::after,
+.up:active,
+.up:active::after
+.down:hover::after,
+.down:active,
+.down:active::after {
+  opacity: 1;
 }
 
 .sorting a {
@@ -689,10 +814,20 @@ a {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  opacity: 0.3;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+  opacity: 0.6;
+}
+
+.sorting a:active {
+  opacity: 1;
 }
 
 .sorting-item span {
-  width: 160px;
+  width: 380px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
