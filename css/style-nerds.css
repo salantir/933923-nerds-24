@@ -11,7 +11,7 @@ body {
   background-color: #ffffff;
 }
 
-/*body > * {
+/* body > * {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -25,7 +25,7 @@ body > * > * > * {
 
 body > * > * > * > * {
   background-color: rgba(0, 255, 255, 0.5);
-}*/
+} */
 
 /*Общие описания*/
 a {
@@ -182,7 +182,8 @@ a {
 /*Описание main главной страницы*/
 
 .main-site {
-  min-height: 1220px; /*временно*/
+  margin-bottom: 135px;
+  /*min-height: 1220px; /*временно*/
 }
 
 .services{
@@ -439,7 +440,112 @@ a {
 
 /*описания footer главной страницы*/
 
-.footer-social ul {
+.contacts {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+.contacts-map {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  max-height: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.contacts .container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.contacts-block {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon_map_marker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 11;
+  height: 200px;
+  width: 200px;
+  bottom: 137px;
+  right: 280px;
+}
+
+/* .contacts {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.contacts-map {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  max-height: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.contacts-block {
+  box-sizing: border-box;
+  width: 320px;
+  height: 310px; /*временно*/
+/*  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  padding: 50px;
+  margin: 0;
+}*/
+
+.contacts-block p:nth-child(1) {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.contacts-block p:nth-child(2) {
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+}
+
+.container-social {
+  display: flex;
+  align-items: center;
+}
+
+.social {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -475,15 +581,20 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
 }
 
 .bonus{
+  margin: 0;
+  padding: 0;
   margin-left: 140px;
+  /*margin-bottom: 74px;*/
 }
 
 .social {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 260px;
 }
 
 .social li:nth-child(2),
@@ -538,12 +649,21 @@ a {
 
 /*Разметка попапа*/
 .modal {
+  /* display: none; */
   position: fixed;
   color: #000000;
+  z-index: 20;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  align-items: flex-start;
 }
 
 .modal-feedback {
-  width: 760px;
+  width: 960px;
   padding: 50px 100px;
   bottom: 180px;
   left: 50%;
@@ -584,17 +704,56 @@ a {
   font-size: 45px;
   line-height: 45px;
 }
+.modal-feedback input[type^="text"],
+.modal-feedback textarea {
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.5;
+}
+
+.modal-feedback input[type^="text"] {
+  padding: 16px 0;
+  padding-left: 15px;
+}
+
+.modal-feedback input{
+  display: block;
+  width: 100%;
+}
+
+.information {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.information label {
+  width: 100%;
+}
+
+.information label:nth-child(2) {
+  margin-left: 40px;
+}
+
 .modal-feedback p {
   font-size: 16px;
   line-height: 18px;
+  font-weight: bold;
 }
 
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  align-items: flex-start;
+.feedback-form textarea {
+  width: 100%
 }
+
+/* .modal-feedback label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+} */
+
+
 /*конец попапа*/
 /*Конец описания futer главной страницы*/
 
