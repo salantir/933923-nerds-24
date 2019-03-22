@@ -164,19 +164,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="contacts">
-        <img src="img/cp_map.jpg" width="1440" height="416" alt="Схема проезда" class="contacts-map">
-        <div class="container">
-          <div class="contacts-block">
-            <p>Nёrds design studio</p>
-            <p>191186, Санкт-Петербург,
-              ул. Б. Конюшенная, д. 19/8<br><br>
-              тел. +7 (812) 275-75-75
-            </p>
-            <a class="button button-write-us" href="#">Напишите нам</a>
-          </div>
-        </div>
-      </div> -->
       <div class="container container-social">
         <div class="footer-social">
           <ul class="social">
@@ -210,15 +197,17 @@
         <p class="information">
           <label>
             Ваше имя:
-            <input type="text" value="Имя Фамилия">
+            <input type="text" value="Имя Фамилия" required>
           </label>
           <label>
             Ваш e-mail:
-            <input type="text" value="email@example.com">
+            <input type="email" value="email@example.com">
+          </label>
+          <label>
+            Текст письма:
+            <textarea rows="5" cols="50">В свободной форме</textarea>
           </label>
         </p>
-        <p>Текст письма:</p>
-        <textarea rows="10" cols="50">В свободной форме</textarea>
         <button class="button" type="submit">
           Отправить
         </button>
