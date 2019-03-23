@@ -8,7 +8,7 @@
     <link href="css/style-nerds.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
-    <header class="main-header">
+    <header class="main-header main-heder-catalog">
       <div class="container">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
@@ -26,7 +26,7 @@
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main class="container main-catalog">
       <h1>Магазин готовых шаблонов</h1>
       <div class="goods">
         <section class="filters">
@@ -36,7 +36,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 0; width: 60%"></div>
+                    <div class="bar" style="margin-left: 0; width: 64%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -47,7 +47,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item-radio">
               <legend>Сетка:</legend>
               <ul class="filter-radio">
                 <li class="filter-option">
@@ -73,7 +73,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item-checkbox">
               <legend>Особенности:</legend>
               <ul class>
                 <li class="filter-option">
@@ -229,29 +229,44 @@
         </section>
       </div>
     </main>
-    <footer class="main-footer container container-social">
-      <div class="footer-social">
-        <ul class="social">
-          <li>
-            <a class="social-button vk" href="www.vk">
-              <span class="visually-hidden">Мы Вконтакте</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button fb" href="www.fb">
-              <span class="visually-hidden">Мы В Фейсбуке</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button insta" href="www.insta">
-              <span class="visually-hidden">Мы Инстаграмме</span>
-            </a>
-          </li>
-        </ul>
+    <footer class="main-footer">
+      <div class="contacts">
+        <img src="img/cp_map.jpg" width="1440" height="416" alt="Схема проезда" class="contacts-map">
+        <div class="container">
+          <div class="contacts-block">
+            <p>Nёrds design studio</p>
+            <p>191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8<br><br>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="button button-write-us" href="#">Напишите нам</a>
+          </div>
+        </div>
       </div>
-      <div class="bonus">
-        <p><b>Давайте дружить это выгодно!</b></p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container container-social">
+        <div class="footer-social">
+          <ul class="social">
+            <li>
+              <a class="social-button vk" href="www.vk">
+                <span class="visually-hidden">Мы Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-button fb" href="www.fb">
+                <span class="visually-hidden">Мы В Фейсбуке</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-button insta" href="www.insta">
+                <span class="visually-hidden">Мы Инстаграмме</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bonus">
+          <p><b>Давайте дружить это выгодно!</b></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
   </body>
