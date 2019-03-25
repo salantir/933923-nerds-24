@@ -10,7 +10,7 @@
   <body class="catalog-page">
     <header class="main-header main-heder-catalog">
       <div class="container">
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation-catalog">
           <a class="main-header-logo" href="index.html">
             <img src="img/icon_logo_nerds.svg" width="160" height="65" alt="Логотип студии Нёрдс">
           </a>
@@ -24,10 +24,10 @@
             <a class="cart-item" href="cart-item.html" aria-label="Корзина для товаров">Корзина</a>
           </div>
         </nav>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main class="container main-catalog">
-      <h1>Магазин готовых шаблонов</h1>
       <div class="goods">
         <section class="filters">
           <form class="filter" method="get" action="http://echo.htmlacademy.ru">
@@ -123,7 +123,7 @@
           <div class="sorting-item">
             <span>Сортировать:</span>
             <ul class="sorting">
-              <li>
+              <li class="sorting-active">
                 <a href="#">по цене</a>
               </li>
               <li>
@@ -134,7 +134,7 @@
               </li>
             </ul>
             <ul class="sorting-up-down">
-              <li>
+              <li class="sorting-up-down-active">
                 <a href="#" class="down">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
@@ -221,7 +221,7 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item pagination-item-current"><a class="active" href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item pagination-item-next"><a href="#next">Следующая</a></li>
@@ -229,14 +229,19 @@
         </section>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer .main-footer-catalog">
       <div class="contacts">
         <img src="img/cp_map.jpg" width="1440" height="416" alt="Схема проезда" class="contacts-map">
         <div class="container">
           <div class="contacts-block">
-            <p>Nёrds design studio</p>
-            <p>191186, Санкт-Петербург,
-              ул. Б. Конюшенная, д. 19/8<br><br>
+            <p>
+              Nёrds design studio
+            </p>
+            <p>
+              191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
               тел. +7 (812) 275-75-75
             </p>
             <a class="button button-write-us" href="#">Напишите нам</a>
@@ -264,7 +269,7 @@
           </ul>
         </div>
         <div class="bonus">
-          <p><b>Давайте дружить это выгодно!</b></p>
+          <p><b>Давайте дружить, это выгодно!</b></p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>

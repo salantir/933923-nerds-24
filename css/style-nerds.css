@@ -9,6 +9,7 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+  min-width: 1200px;
 }
 
 /*Общие описания*/
@@ -106,6 +107,7 @@ a {
   flex-direction: row;
   justify-content: center;
   flex-grow: 1;
+  flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
   padding-top: 16px;
@@ -122,13 +124,14 @@ a {
   position: relative;
   margin: 0;
   padding: 0px;
-  padding-left: 53px;
+  padding-left: 57px;
   padding-top: 16px;
+  vertical-align: inherit;
 }
 
 .cart-item::before {
   position: absolute;
-  content: " ";
+  content: "";
   width: 15px;
   height: 15px;
   background-image: url("../img/icon_cart.svg");
@@ -195,6 +198,7 @@ a {
 
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: inherit;
 }
 
 .slider-controls label::after {
@@ -317,7 +321,7 @@ a {
 /*Описание main главной страницы*/
 
 .main-site {
-  margin-bottom: 176px;
+  margin-bottom: 80px;
 }
 
 .services {
@@ -330,7 +334,7 @@ a {
 }
 
 .development-services{
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .services li {
@@ -357,7 +361,7 @@ a {
 }
 
 .services-item p {
-  padding-bottom: 32px;
+  padding-bottom: 33px;
   color: #283136;
 }
 
@@ -366,13 +370,13 @@ a {
   padding: 0;
   width: 33.3333%;
   box-sizing: border-box;
-  padding-right: 90px;
+  padding-right: 92px;
   position: relative;
   padding-top: 171px;
 }
 
 .services-item::before {
-  content: '';
+  content: "";
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -405,7 +409,7 @@ a {
 }
 
 .services-presentation {
-  padding-left: 28px;
+  padding-left: 26px;
 }
 
 .button-web-site {
@@ -455,7 +459,9 @@ a {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  padding-bottom: 112px;
+  padding-bottom: 61px;
+  border-top: 2px solid #f4f4f4;
+  padding-top: 37px;
 }
 
 .opportunity {
@@ -467,7 +473,7 @@ a {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
-  padding-bottom: 33px;
+  padding-bottom: 32px;
   font-weight: 500;
   padding-top: 36px;
 }
@@ -476,7 +482,7 @@ a {
   padding: 0;
   margin: 0;
   padding-right: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
   color: #283136;
 }
 
@@ -496,7 +502,7 @@ a {
 
 .orders li {
   position: relative;
-  padding-top: 23px;
+  padding-top: 24px;
   padding-left: 35px;
   text-transform: none;
 }
@@ -563,22 +569,40 @@ a {
   color: #283136;
 }
 
-
 .friends {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 0 30px;
+  margin: 0;
+  border-top: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 43px;
+  padding-top: 49px;
 }
 
 .friends img {
   display: block;
+  margin: 0 auto;
 }
 
 .logo-friends {
+  position: relative;
   opacity: 0.2;
+  width: 270px;
+  margin-right: 40px;
+}
+
+.logo-friends:nth-child(2)::after {
+  top: 13px;
+}
+
+.logo-friends:nth-child(4n)::after {
+  display: none;
+}
+
+.logo-friends:nth-child(4n) {
+  margin-right: 0;
 }
 
 .logo-friends:hover,
@@ -590,18 +614,33 @@ a {
   opacity: 0.1;
 }
 
+.logo-friends::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: black;
+  right: -22px;
+  top: 0;
+  opacity: 0.4;
+}
+
 /*Конец описания main главной страницы*/
 
 /*описания footer главной страницы*/
+.main-footer {
+  margin-bottom: 70px;
+}
 
 .contacts {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   position: relative;
-  /* overflow: hidden; */
-  padding: 15px 0;
-  margin-bottom: 30px;
+  overflow: hidden;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  margin-bottom: 36px;
 }
 
 .contacts-map {
@@ -632,10 +671,10 @@ a {
   z-index: 10;
   background-color: #fff;
   padding-right: 56px;
-  top: -14px;
+  padding-bottom: 26px;
 }
 
-.contacts::after {
+/* .contacts::after {
   content: "";
   position: absolute;
   background-image: url("../img/icon_map_marker.png");
@@ -646,7 +685,7 @@ a {
   width: 200px;
   bottom: 79px;
   right: 309px;
-}
+} */
 
 .button-write-us {
   width: 220px;
@@ -655,30 +694,45 @@ a {
   margin-bottom: 20px;
 }
 
-.contacts-block p:nth-child(1) {
+.button-write-us:hover,
+.button-write-us:focus {
+  background-color: #e74246;
+}
+
+.button-write-us:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.contacts-block p {
   padding: 0;
   margin: 0;
+  padding-left: 50px;
+}
+
+.contacts-block p:nth-child(1) {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 25px;
-  padding-top: 49px;
-  padding-left: 49px;
+  margin-bottom: 22px;
+  padding-top: 50px;
 }
 
 .contacts-block p:nth-child(2) {
-  padding: 0;
-  margin: 0;
+  line-height: 18px;
+  margin-bottom: 19px;
+}
+
+.contacts-block p:nth-child(3) {
   line-height: 18px;
   margin-bottom: 37px;
-  padding-left: 50px;
 }
 
 .container-social {
   display: flex;
   align-items: center;
-  margin-top: 90px;
 }
 
 .social {
@@ -688,7 +742,7 @@ a {
 }
 
 .footer-social {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .bonus p:first-of-type {
@@ -696,7 +750,7 @@ a {
   line-height: 36px;
   margin-left: 0;
   padding: 0;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .bonus p:last-of-type{
@@ -727,12 +781,15 @@ a {
 .social {
   display: flex;
   justify-content: space-between;
-  width: 260px;
+}
+
+.social li {
+
 }
 
 .social li:nth-child(2),
 .social li:nth-child(3) {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .vk {
@@ -906,8 +963,8 @@ a {
   margin-bottom: 35px;
 }
 
-.information label input,
-.information label textarea {
+.comment input,
+.comment textarea {
   margin-top: 13px;
 }
 
@@ -945,8 +1002,8 @@ a {
   margin-top: 3px;
 }
 
-.main-heder-catalog {
-  margin-bottom: 78px;
+.main-navigation-catalog {
+  margin-bottom: 79px;
 }
 
 .catalog-page h1 {
@@ -955,12 +1012,13 @@ a {
   text-align: center;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 166px;
+  margin-bottom: 56px;
+  padding-bottom: 107px
 
 }
 
 .main-catalog {
-  margin-bottom: 109px;
+  margin-bottom: 59px;
 }
 
 .goods {
@@ -992,7 +1050,7 @@ a {
   line-height: 20px;
   padding: 0;
   margin: 0;
-  padding-left: 35px;
+  padding-left: 36px;
 }
 
 .filter-option label {
@@ -1032,13 +1090,14 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 51px;
+  margin-bottom: 53px;
+  padding-top: 2px;
 }
 
 .filter-item-radio legend,
 .filter-item-radio legend {
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
 
 .filter-item-radio {
@@ -1049,8 +1108,8 @@ a {
   position: relative;
 
   height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  margin-bottom: 16px;
+  padding-top: 37px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -1074,7 +1133,7 @@ a {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
 
   width: 4px;
@@ -1110,7 +1169,7 @@ a {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
+  padding: 8px 9px;
   margin-left: 10px;
 
   font-family: Roboto, Arial, sans-serif;
@@ -1248,20 +1307,27 @@ a {
 
 .sorting-item {
   display: flex;
-  margin-bottom: 92px;
+  margin-bottom: 52px;
 }
 
 
 .sorting {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: flex-start;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 100px;
+  margin-left: 76px;
   width: 360px;
-  padding-right: 80px;
+  padding-right: 53px;
+}
+
+.sorting li {
+  margin-right: 26px;
+}
+
+.sorting li:nth-child(3) {
+  padding-right: 0;
 }
 
 .sorting-up-down {
@@ -1278,7 +1344,7 @@ a {
   width: 11px;
   height: 10px;
   position: absolute;
-  top: 5px;
+  top: 7px;
   right: 29px;
   opacity: 0.2
 }
@@ -1289,7 +1355,7 @@ a {
   width: 11px;
   height: 10px;
   position: absolute;
-  top: 5px;
+  top: 7px;
   right: 1px;
   opacity: 0.2
 }
@@ -1307,6 +1373,10 @@ a {
 .down:hover::after,
 .down:active,
 .down:active::after {
+  opacity: 1;
+}
+
+.sorting-up-down-active a{
   opacity: 1;
 }
 
@@ -1328,12 +1398,17 @@ a {
   opacity: 1;
 }
 
+.sorting-active a {
+  opacity: 1;
+}
+
 .sorting-item span {
   width: 380px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  padding-top: 2px;
 }
 
 .templates-list {
@@ -1342,12 +1417,15 @@ a {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: -9px;
+  margin-bottom: 29px;
 }
 
 .templates-list li {
+  padding: 0;
+  margin: 0;
   width: 360px;
-  margin-bottom: 65px;
+  margin-bottom: 25px;
+  padding-top: 41px;
 }
 
 /*описание наложенной формы при выделении проекта*/
@@ -1356,6 +1434,8 @@ a {
   height: 230px;
   text-align: center;
   background-color: #eeeeee;
+  bottom: 0;
+  left: 0;
 }
 
 .popap-description {
@@ -1363,7 +1443,7 @@ a {
 }
 
 .popap-description > a::before {
-  content: " ";
+  content: "";
   position: absolute;
   background-image: url("../img/icon_browser.svg");
   background-repeat: no-repeat;
@@ -1386,8 +1466,10 @@ a {
 }
 
 .description h3 {
-  padding-top: 30px;
-  margin-bottom: 18px;
+  padding: 0;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
@@ -1395,10 +1477,13 @@ a {
 }
 
 .description p {
+  margin: 0;
   padding: 0 80px;
   margin-bottom: 30px;
   color: #666666;
   line-height: 18px;
+  overflow: auto;
+  height: 50px;
 }
 
 .pink-description p,
@@ -1414,6 +1499,7 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  width: 200px;
 }
 
 .popap-description .button:hover,
@@ -1432,7 +1518,7 @@ a {
   align-items: stretch;
   margin: 0;
   padding: 0;
-  width: 380px;
+  width: 450px;
 }
 
 .pagination-list a {
@@ -1450,7 +1536,7 @@ a {
 }
 
 .pagination-list li:nth-child(4) {
-  margin-left: 72px;
+  width: 260px;
 }
 
 .pagination-item-next a {
@@ -1462,15 +1548,27 @@ a {
   background-color: #eeeeee;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item-current a {
+  border: 3px solid #dfdfdf;
+  background-color: #ffffff;
+  height: 44px;
+  width: 44px;
+}
+
+.pagination-item a:hover:not(.pagination-item-current),
+.pagination-item a:focus:not(.pagination-item-current) {
   background-color: #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item a:active:not(.pagination-item-current) {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
+
+.pagination-item-next a:hover,
+.pagination-item-next a:focus {
+  width: 100%;
 }
 
 .main-footer-catalog {
