@@ -676,19 +676,6 @@ a {
   padding-bottom: 26px;
 }
 
-/* .contacts::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon_map_marker.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 11;
-  height: 200px;
-  width: 200px;
-  bottom: 79px;
-  right: 309px;
-} */
-
 .button-write-us {
   width: 220px;
   background-color: #fb565a;
@@ -847,6 +834,14 @@ a {
   color: #000000;
   z-index: 30;
 }
+
+/*Для джава скрипт*/
+
+.modal-show {
+  display: block;
+}
+
+/*конец*/
 
 .feedback-form {
   display: flex;
@@ -1164,7 +1159,7 @@ a {
 .price-controls label {
   display: inline-block;
   width: 50%;
-
+  vertical-align: inherit;
   font-size: 16px;
   text-transform: uppercase;
 }
